@@ -34,6 +34,9 @@ body {
   margin: 5px;
 }
 
+.pack ul {
+  list-style: none;}
+
 /*******************************************************
 **************TABLETTE***********************************/
 
@@ -41,6 +44,30 @@ body {
 
   #mainprestation img {
     position: relative;
-    left: 120px;
+    left: 160px;
   }
+
+.pack h4 {
+    text-align: center;
+  }
+
+.pack ul {
+  text-align: center;
+  list-style: none;
+}
+
+.h3prestation {
+  font-size: 40px;
+}
+
+.h4prestation {
+  font-size: 30px;
+}
+
+.h5prestation {
+  font-size: 20px;
+}
+
+
+
 }
