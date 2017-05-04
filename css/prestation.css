@@ -6,3 +6,41 @@ body {
 }
 
 /*******************************************************
+**************MOBILE***********************************
+******************************************************/
+.h3prestation {
+  background-color: purple;
+  color: white;
+  font-size: 30px;
+}
+
+.h4prestation {
+  background-color: gold;
+  color: white;
+  font-size: 20px;
+}
+
+.h5prestation {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#mainprestation img {
+  position: relative;
+  left: 75px;
+}
+
+#mainprestation {
+  margin: 5px;
+}
+
+/*******************************************************
+**************TABLETTE***********************************/
+
+@media (min-width:760px) {
+
+  #mainprestation img {
+    position: relative;
+    left: 120px;
+  }
+}
