@@ -30,84 +30,84 @@ header{
 }
 
 
-/***************************menu telephone********************************/
+/***************************menu telephone***************************************/
 .bas{
   order:-1;
-  font-size:50px;
+  /*font-size:50px;*/
 }
 
-.lien, .menu{
-  background-color: #D3D3D3;
-  display: flex;
-}
-
-input, .bas{
+#menu{
    display: none;
 }
 
-.menu li, .info{
-  border: 1px solid white;
-  width: 50%;
-  margin: 10%;
-  padding: 5%;
-  font-size:15px;
+.bas label{
+  display: block;
+  background-color: #800080;
+  padding:2%;
+  border-radius:0 0 100px 0;
+  width:60px;
+  height: 60px;
+  font-size: 30px;
+}
+
+.menu-lien{
+  width:0%;
+  height:0px;
   list-style: none;
+  overflow: hidden;
+  background-color: #d3d3d3;
 }
 
-.menu li:focus{
-  background-color: #03D1B5;
-  color: white;
+#menu:checked ~ .menu-lien{
+  width:200px;
+  height: 200px;
+  z-index:1;
+  transition: 1s;
 }
 
-.menu li:hover{
-  background-color: #03D1B5;
-  color: white;
-}
 
-.bas:focus .menu {
-    display: block;
-}
-
-.bas:hover .menu {
-    display: block;
-}
 
 /************************************************menu contact*******************************************/
-.lien i{
+
+.lien-milieu{
   position:absolute;
-  top:0%;
-  right: 0%;
-  font-size: 50px;
+  top: 0%;
+  left:80%;
+  font-size:70px;
+
 }
 
-.info{
-   background-color: #d3d3d3;
-   display: flex;
-   flex-flow: column;
+#lien{
    display: none;
-   font-size:15px;
- }
-
-.info:focus{
-  background-color: #03D1B5;
-  color: white;
 }
 
-.info:hover{
-  background-color: #03D1B5;
-  color: white;
+.lien-milieu label{
+  display: block;
+  background-color: #ffd700;
+  padding:2%;
+  border-radius:0 0 0 100px;
+  width:70px;
+  height: 70px;
+  font-size: 30px;
 }
 
-.lien:focus .info{
-    display:block;
+.lien-lien{
+  width:0%;
+  height:0px;
+  list-style: none;
+  overflow: hidden;
+  background-color: #d3d3d3;
 }
 
-.lien:hover .info{
-    display:block;
+#menu:checked ~ .lien-lien{
+  width:200px;
+  height: 200px;
+  transition: 1s;
 }
 
 /********************************************************footer*****************************************/
 footer{
+  border-top: 2px double #d3d3d3;
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -137,10 +137,41 @@ footer{
 }
 
 .footer-bas{
-  width: 90%;
+  background-color: #d3d3d3;
+  width:100%;
 }
 
 .footer-bas li{
-  width:20%;
+  width:10%;
+  margin:5%;
   display: inline-block;
+}
+
+/************************************************page contact************************************************/
+main{
+  display: flex;
+  flex-flow: column;
+}
+
+.repond, .formulaire, .coordonees input, .question textarea, .siege, iframe{
+  width:95%;
+  margin:auto;
+}
+
+.siege{
+  background-color: #d3d3d3;
+}
+
+iframe{
+  height:100px;
+}
+
+.envoyer{
+  font-size:25px;
+  height:50px;
+  background-color: #800080;
+  color:white;
+  margin:5%;
+  border-radius:4px;
+  border-style: none;
 }
