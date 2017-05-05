@@ -1,17 +1,90 @@
-/********************************************mode tel****************************************************
+/**********************************MOBILE****************************************************
 ********************************************************************************************************/
+
 body{
-  margin: 0%;
-  padding:0%;
   font-family: 'Inconsolata', monospace;
 }
 
-.h2, .h3{
-  color: #800080;
+
+main {
+  margin: 5px;
+}
+
+.h2 {
+  color: purple;
+  font-size: 20px;
   text-align: center;
 }
 
-.agence{
-  width:90%;
+figcaption span {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+
+figure img {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+figure {
+  margin: 5px;
   text-align: center;
+}
+
+/***************************TABLETTE***************************
+****************************************************************/
+
+@media (min-width:768px) {
+
+  .h2 {
+    font-size: 30px;
+  }
+
+  .collaborateur {
+    display: flex;
+
+  }
+
+  figure {
+    margin-left: 15px;
+    width: 30%;
+  }
+ figure img {
+   margin: 5px;
+ }
+
+
+}
+
+/************************DESKTOP****************************
+***********************************************************/
+
+@media (min-width:1200px) {
+
+  figure {
+    margin-left: 28px;
+  }
+
+  figure img {
+    margin-bottom: 20px;
+  }
+
+.agence  {
+  display: flex;
+  flex-direction: column;
+}
+
+#container {
+  display: flex;
+}
+
+.h2 {
+  margin: 0;
+}
+
+p {
+  margin: 30px;
+}
+
 }
