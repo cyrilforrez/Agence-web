@@ -1,6 +1,6 @@
 /**********************************MOBILE****************************************************
 ********************************************************************************************************/
-* {border: 1px solid black;}
+
 body{
   font-family: 'Inconsolata', monospace;
 }
@@ -23,12 +23,13 @@ figcaption span {
 
 
 figure img {
-  margin-left: 65px;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 figure {
   margin: 5px;
+  text-align: center;
 }
 
 /***************************TABLETTE***************************
@@ -54,5 +55,36 @@ figure {
  }
 
 
+}
+
+/************************DESKTOP****************************
+***********************************************************/
+
+@media (min-width:1200px) {
+
+  figure {
+    margin-left: 28px;
+  }
+
+  figure img {
+    margin-bottom: 20px;
+  }
+
+.agence  {
+  display: flex;
+  flex-direction: column;
+}
+
+#container {
+  display: flex;
+}
+
+.h2 {
+  margin: 0;
+}
+
+p {
+  margin: 30px;
+}
 
 }
