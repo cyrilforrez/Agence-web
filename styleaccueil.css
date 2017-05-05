@@ -7,27 +7,42 @@ body {
   font-family: 'Inconsolata', monospace;
 }
 
-.footer-bas {
-  padding: 0%;
-}
-
-.footer-bas li {
-  padding-left: 2%;
-}
-
 /*--------------------------------------------------------Main------------------------------------------------*/
+
+h2 {
+  background-color: purple;
+  color: white;
+}
+
+main div {
+    margin-left: 5%;
+    width: 90%;
+}
 
 .gallerie {
   display: inline-flex;
   margin-top: 10%;
-  margin-left: 5%;
+  margin-left: 10%;
   overflow-x: auto;
   overflow-y: hidden;
   width: 85%;
+  height: 260px;    
 }
 
 figure {
   height: 230px;
+}
+
+figcaption {
+  margin: 20%;
+}
+
+.gallerie img:hover {
+  transform: scale(2.2);
+}
+
+.gallerie figure figcaption p {
+  text-align: left;
 }
 
 p {
@@ -49,6 +64,7 @@ table {
 .tableau {
   overflow-x: auto;
   overflow-y: hidden;
-  height: 740px;
-  width: 95%;
+  height: 630px;
+  width: 90%;
+  margin-bottom: 20%;
 }
