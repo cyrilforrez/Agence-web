@@ -1,21 +1,20 @@
+/********************************************************mode tel**********************************************/
+/*****************************************************************************************************/
 body{
   margin: 0%;
   padding:0%;
+  font-family: 'Inconsolata', monospace;
 }
 
 .couleur{
   color: #ffd700;
 }
 
-h1, h2{
+h1{
   color: #800080;
   text-align: center;
 }
-
-/*------------------------------------------------Smartphone--------------------------------------------*/
-
 /************************************************header du site******************************************/
-
 header{
   display: flex;
   flex-flow: column;
@@ -31,12 +30,13 @@ header{
   align-items: flex-start;
 }
 
-
+.titre{
+  width: 100%;
+  text-align: center;
+}
 /***************************menu telephone***************************************/
-
 .bas{
   order:-1;
-  /*font-size:50px;*/
 }
 
 #menu{
@@ -53,39 +53,64 @@ header{
   font-size: 30px;
 }
 
+.menu-lien li{
+  width:50%;
+  color: white;
+  text-align: center;
+  margin:8% 8% 2% 0%;
+  padding:2%;
+}
+
 .menu-lien{
   width:0%;
   height:0px;
   list-style: none;
   overflow: hidden;
-  background-color: #d3d3d3;
+  background-color: #222222;
 }
 
 #menu:checked ~ .menu-lien{
-  width:200px;
-  height: 200px;
-  z-index:1;
+  width:250px;
+  height: 250px;
   transition: 1s;
 }
-
-
 
 /************************************************menu contact*******************************************/
 
 .lien-milieu{
+  width:80%;
   position:absolute;
   top: 0%;
-  left:77%;
-  font-size:70px;
-  width: 23%;
+  right: 0%;
 }
 
 #lien{
    display: none;
 }
 
+.lien-a{
+  margin-top:30%;
+  width:0%;
+  height:0px;
+  list-style: none;
+  overflow: hidden;
+  background-color: #222222;
+}
+
+.lien-a a{
+  text-align: center;
+  background-color:#ffd700;
+  width: 50%;
+  display: block;
+  margin: 10%;
+  padding: 2%;
+}
+
 .lien-milieu label{
   display: block;
+  position: absolute;
+  top: 0%;
+  right: 0%;
   background-color: #ffd700;
   padding:2%;
   border-radius:0 0 0 100px;
@@ -94,22 +119,13 @@ header{
   font-size: 30px;
 }
 
-.lien-lien{
-  width:0%;
-  height:0px;
-  list-style: none;
-  overflow: hidden;
-  background-color: #d3d3d3;
-}
-
-#menu:checked ~ .lien-lien{
-  width:200px;
-  height: 200px;
+#lien:checked ~ .lien-a{
+  width:400px;
+  height:250px;
   transition: 1s;
 }
 
 /********************************************************footer*****************************************/
-
 footer{
   border-top: 2px double #d3d3d3;
   width: 100%;
@@ -143,13 +159,10 @@ footer{
 .footer-bas{
   background-color: #d3d3d3;
   width:100%;
-  padding: 0%;
 }
 
 .footer-bas li{
   width:10%;
   margin:5%;
   display: inline-block;
-  padding-left: 2%;
 }
-

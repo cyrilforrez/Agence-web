@@ -1,0 +1,38 @@
+body{
+  margin: 0%;
+  padding:0%;
+  font-family: 'Inconsolata', monospace;
+}
+
+.h2, .h3{
+  color: #800080;
+  text-align: center;
+}
+
+main{
+  display: flex;
+  flex-flow: column;
+}
+
+.repond, .formulaire, .coordonees input, .question textarea, .siege, iframe{
+  width:95%;
+  margin:auto;
+}
+
+.siege{
+  background-color: #d3d3d3;
+}
+
+iframe{
+  height:100px;
+}
+
+.envoyer{
+  font-size:25px;
+  height:50px;
+  background-color: #800080;
+  color:white;
+  margin:5%;
+  border-radius:4px;
+  border-style: none;
+}
