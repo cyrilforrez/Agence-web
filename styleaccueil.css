@@ -1,11 +1,15 @@
-figure, p {
+body, figure, p {
   margin: 0% 0%;
   padding: 0% 0%;
 }
 
+body {
+  font-family: 'Inconsolata', monospace;
+}
+
 /*--------------------------------------------------------Main------------------------------------------------*/
 
-h3 {
+h2 {
   background-color: purple;
   color: white;
 
