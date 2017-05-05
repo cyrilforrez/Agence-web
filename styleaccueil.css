@@ -1,7 +1,18 @@
 body, figure, p {
   margin: 0% 0%;
   padding: 0% 0%;
+}
 
+body {
+  font-family: 'Inconsolata', monospace;
+}
+
+.footer-bas {
+  padding: 0%;
+}
+
+.footer-bas li {
+  padding-left: 2%;
 }
 
 /*--------------------------------------------------------Main------------------------------------------------*/
@@ -21,4 +32,23 @@ figure {
 
 p {
   margin-top: 1%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 5%;
+
+}
+
+table {
+  background-color: lightgrey;
+}
+
+.tableau {
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 740px;
+  width: 95%;
 }
