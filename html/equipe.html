@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/header,footer.css">
+    <link rel="stylesheet" href="../css/equipe.css">
     <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
     <script src="https://use.fontawesome.com/40917ba2bf.js"></script>
 
@@ -14,38 +15,50 @@
   </head>
 
   <body>
+    <!-- *********************************en tête du site************************ -->
     <header>
       <nav class="haut">
         <ul>
-          <li><a href="#">Nous contacter</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
           <li><a href="#">Recrutement</a></li>
           <li><a href="#">Espace presse</a></li>
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         </ul>
       </nav>
 
-      <div class="milieu">
-        <a href="#">Demander votre <br>devis en ligne</a>
-        <div class="titre">
+      <div class="milieu"> <!--***********************************ouverture de la div"milieu"-->
+        <div class="lien-milieu" tabindex="0"> <!--***************ouverture de la div "lien-milieu-->
+          <input type="checkbox" id="lien">
+          <label for="lien" <i class="fa fa-phone" aria-hidden="true"></i></label>
+         <div class="lien-a">  <!--********************************ouverture de la div "lien-a"-->
+          <a href="#"> Demander votre <br>devis en ligne</a>
+          <a href="#"> Une question? <br>On vous rappelle.</a>
+        </div> <!--*********************************************fermeture div "lien-a"-->
+      </div>  <!--********************************************fermeture div "lien-milieu"-->
+
+
+        <div class="titre">  <!--****************************ouverture de la div "titre"-->
           <h1><span class="couleur">3C</span>Digital</h1>
           <p>Accélérateur de performance digitale</p>
-        </div>
-        <a href="#">Une question? <br>On vous rappelle.</a>
-      </div>
+        </div>  <!--*************************************************fermeture div "lien-a"-->
+      </div>  <!--*************************************************fermeture div "milieu"-->
 
-      <nav class="bas" tabindex="0"><i class="fa fa-bars" aria-hidden="true"></i>
-        <ul class="menu">
-          <li><a href="#">Projet réalisés</a></li>
-          <li><a href="#">Qui sommes nous?</a></li>
-          <li><a href="#">Prestation</a></li>
+      <nav class="bas" tabindex="0">
+        <input type="checkbox" id="menu">
+        <label for="menu"<i class="fa fa-bars" aria-hidden="true"></i></label>
+        <ul class="menu-lien">
+          <li><a href="../index.html">Projet réalisés</a></li>
+          <li><a href="equipe.html">Qui sommes nous?</a></li>
+          <li><a href="prestation.html">Prestation</a></li>
         </ul>
       </nav>
     </header>
+<!-- *****************************************************fin en tête************************************* -->
 
     <main>
       <section class="agence">
-        <h2>Agence <span>Web de Lille</span></h2>
+        <h2 class="h2"><span class="couleur">Agence</span> Web de Lille</h2>
         <p>Création et référencement de votre site Internet, dans le Nord-Pas-de-Calais,à Lille, Arras, Douai, Lens et Valenciennes</p>
         <p>Aujourd'hui, quel est l'outil le plus rentable pour développer l'activité de votre entreprise ?
           Il n'existe qu'une seule réponse à cette question : votre site web !
@@ -54,20 +67,22 @@
       </section>
 
       <section class="agence">
-        <h2>3CDigital : <span>une équipe d'experts en webmarketing à Lille</span></h2>
+        <h2 class="h2"><span class="couleur">3CDigital :</span> une équipe d'experts en webmarketing à Lille</h2>
         <p>Notre agence web de Lille est composée de véritables professionnels du webmarketing : hébergement, développement web, webdesign, référencement, webrédaction. Les pôles d'Axecibles sont multiples, chacun créé afin d'apporter une réponse adéquate aux besoins de votre projet de création de site internet.</p>
         <p>Nous mettons toutes nos compétences à profit afin de vous aider à développer votre activité et améliorer sa visibilité sur la toile. Au cœur de notre service webmarketing de Lille, le référencement est l'une de nos plus grandes préoccupations, et c'est pour cette raison que nous développons une stratégie web en adéquation avec votre métier et votre cible.</p>
         <p>Notre agence de création de site internet de Lille va même plus loin en vous offrant des solutions qui vous permettent de prospecter et de fidéliser votre clientèle. </p>
       </section>
 
       <section class="agence">
-        <h2>La relation client : <span>la clef de votre succès !</span></h2>
+        <h2 class="h2"><span class="couleur">La relation client : </span>la clef de votre succès !</h2>
         <p>Spécialiste de la stratégie web à Lille, Axecibles connaît les enjeux d'un projet de création de site internet. Travail de longue haleine, il requiert l'instauration d'une véritable collaboration entre clients et prestataire.</p>
         <p>C'est pourquoi notre agence web de Lille vous considère comme un partenaire-clef de la réussite de votre site internet ! Nos équipes du webmarketing vous assistent tout au long de la durée de votre contrat, en ayant à cœur le respect des objectifs de votre stratégie web.</p>
         <p>Située à Marcq-en-Barœul, notre agence web propose ses prestations de création de site Internet à Lille et ses environs : Arras, Douai, Lens, Valenciennes...</p>
       </section>
 
-      <div class="collaborateur">
+
+      <section class="collaborateur">
+        <h2 class="h2">Collaborateur</h2>
         <figure>
           <img src="" alt="">
           <figcaption></figcaption>
@@ -82,40 +97,44 @@
           <img src="" alt="">
           <figcaption></figcaption>
         </figure>
-      </div>
+      </section>
+
     </main>
 
-    <footer>
-      <div class="footer-haut">
-        <figure>
-          <img src="" alt="">
-        </figure>
-        <figure>
-          <img src="" alt="">
-        </figure>
-        <figure>
-          <img src="" alt="">
-        </figure>
-        <figure>
-          <img src="" alt="">
-        </figure>
+    <!-- **************************************************************debut footer********************************** -->
+        <footer>
+          <div class="footer-haut">
+            <section class="milieu-footer">
+              <h2> <span class="couleur">Nos labels</span>& partenariats</h2>
+              <p>3CDigital est la première agence web labellisée Origine France Garantie pour vous garantir
+                des prestations de haute qualité et un résultat à la hauteur de votre projet web.
+                Partenaire Google et Partenaire Prestashop, notre agence maîtrise chaque domaine du web avec
+                l’aide de collaborateurs experts.</p>
+              </section>
 
-        <section>
-          <h2>Nos labels <span>& partenariats</span></h2>
-          <p>3CDigital est la première agence web labellisée Origine France Garantie pour vous garantir
-            des prestations de haute qualité et un résultat à la hauteur de votre projet web.
-            Partenaire Google et Partenaire Prestashop, notre agence maîtrise chaque domaine du web avec
-            l’aide de collaborateurs experts.</p>
-        </section>
+            <div class="partenaire">
+             <figure>
+               <img src="../img/partenaire/partenaire.png" alt="partenaire">
+             </figure>
+             <figure>
+               <img src="../img/partenaire/partenaire2.png" alt="partenaire">
+             </figure>
+             <figure>
+               <img src="../img/partenaire/partenaire3.png" alt="partenaire">
+             </figure>
+             <figure>
+               <img src="../img/partenaire/partenaire4.jpg" alt="partenaire">
+             </figure>
+            </div>
+          </div>
 
-        <ul>
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        </ul>
+            <ul class="footer-bas">
+              <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="contact.html"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
 
-      </div>
-    </footer>
+        </footer>
   </body>
 </html>
