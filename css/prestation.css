@@ -1,0 +1,133 @@
+/**************GENERAL**********************************
+*************************************************************
+*********************************************************/
+
+body {
+  font-family: 'Inconsolata', monospace;
+}
+
+/*******************************************************
+**************MOBILE***********************************/
+
+.h3prestation {
+  background-color: purple;
+  color: white;
+  font-size: 30px;
+}
+
+.h4prestation {
+  background-color: gold;
+  color: white;
+  font-size: 20px;
+}
+
+.h5prestation {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#mainprestation img {
+  position: relative;
+  left: 70px;
+}
+
+#mainprestation {
+  margin: 5px;
+}
+
+.pack ul {
+  list-style: none;}
+
+/*******************************************************
+**************TABLETTE***********************************/
+
+@media (min-width:768px) {
+
+  #mainprestation img {
+    position: relative;
+    left: 160px;
+  }
+
+.h4prestation {
+    text-align: center;
+  }
+
+.pack ul {
+  text-align: center;
+  list-style: none;
+}
+
+.h3prestation {
+  font-size: 40px;
+}
+
+.h4prestation {
+  font-size: 30px;
+}
+
+.h5prestation {
+  font-size: 20px;
+}
+
+}
+
+/*************************DESKTOP********************
+*****************************************************/
+
+@media (min-width:1200px) {
+
+#creationsite {
+  display: flex;
+}
+
+#creationsite article {
+  width: 30%;
+  margin-left: 30px;
+}
+
+
+#referencement {
+  display: flex;
+}
+
+#referencement article {
+  width: 30%;
+  margin-left: 30px;
+}
+
+
+#strategie {
+  display: flex;
+}
+
+#strategie article {
+  width: 30%;
+  margin-left: 30px;
+}
+
+
+#materiels {
+  display: flex;
+}
+
+#materiels article {
+  width: 30%;
+  margin-left: 170px;
+}
+
+
+.pack {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 110px;
+}
+
+#mainprestation img {
+  width: 300px;
+  margin-left: 320px;
+}
+
+
+
+
+}
