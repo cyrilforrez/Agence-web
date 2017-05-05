@@ -1,5 +1,3 @@
-/********************************************************mode tel**********************************************/
-/*****************************************************************************************************/
 body{
   margin: 0%;
   padding:0%;
@@ -9,11 +7,15 @@ body{
   color: #ffd700;
 }
 
-h1, h2, h3{
+h1, h2{
   color: #800080;
   text-align: center;
 }
+
+/*------------------------------------------------Smartphone--------------------------------------------*/
+
 /************************************************header du site******************************************/
+
 header{
   display: flex;
   flex-flow: column;
@@ -31,6 +33,7 @@ header{
 
 
 /***************************menu telephone***************************************/
+
 .bas{
   order:-1;
   /*font-size:50px;*/
@@ -83,7 +86,13 @@ header{
   width: 50%;
   position:absolute;
   top: 0%;
+<<<<<<< HEAD:css/header,footer.css
   right: 0%;
+=======
+  left:77%;
+  font-size:70px;
+  width: 23%;
+>>>>>>> 5ec71034536cf0c7c0f7d9f1c36d64e158f555c1:header,footer.css
 }
 
 
@@ -124,6 +133,7 @@ lien-a{
 }
 
 /********************************************************footer*****************************************/
+
 footer{
   border-top: 2px double #d3d3d3;
   width: 100%;
@@ -157,10 +167,16 @@ footer{
 .footer-bas{
   background-color: #d3d3d3;
   width:100%;
+  padding: 0%;
 }
 
 .footer-bas li{
   width:10%;
   margin:5%;
   display: inline-block;
+  padding-left: 2%;
 }
+<<<<<<< HEAD:css/header,footer.css
+=======
+
+>>>>>>> 5ec71034536cf0c7c0f7d9f1c36d64e158f555c1:header,footer.css
