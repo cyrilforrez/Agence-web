@@ -6,6 +6,11 @@ body{
   font-family: 'Inconsolata', monospace;
 }
 
+li, a{
+  text-decoration: none;
+  list-style: none;
+}
+
 .couleur{
   color: #ffd700;
 }
@@ -13,9 +18,11 @@ body{
 h1{
   color: #800080;
   text-align: center;
+  font-size:50px;
 }
 /************************************************header du site******************************************/
 header{
+  background-color:lightgrey;
   display: flex;
   flex-flow: column;
 }
@@ -34,9 +41,17 @@ header{
   width: 100%;
   text-align: center;
 }
+.titre h1, .titre p{
+  margin: 0%;
+}
+
+.titre p{
+  margin-bottom: 5%;
+}
 /***************************menu telephone***************************************/
 .bas{
   order:-1;
+  z-index:1;
 }
 
 #menu{
@@ -64,7 +79,6 @@ header{
 .menu-lien{
   width:0%;
   height:0px;
-  list-style: none;
   overflow: hidden;
   background-color: #222222;
 }
@@ -102,7 +116,7 @@ header{
   background-color:#ffd700;
   width: 50%;
   display: block;
-  margin: 10%;
+  margin: 17%;
   padding: 2%;
 }
 
@@ -141,6 +155,7 @@ footer{
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  margin-left:3%;
 }
 
 .footer-haut figure{
@@ -163,7 +178,7 @@ footer{
 }
 
 .footer-bas li{
-  padding-left: 2%;
+  padding-left:3%;
   width:10%;
   margin:5%;
   display: inline-block;
@@ -171,3 +186,81 @@ footer{
 
 /********************************************************mode tablette******************************************
 *******************************************************************************************************/
+@media screen and (min-width:768px) {
+
+/*************************************************header*************************************************/
+.bas{
+  order: 0;
+}
+
+.haut ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.haut li{
+  width:50%;
+  padding:1%;
+}
+
+.haut{
+  display: flex;
+  justify-content: space-between;
+  margin-left:10%;
+}
+
+.lien-milieu label{
+  display: none;
+}
+
+.lien-milieu{
+  width:136%;
+  top:-7%;
+  right:-18%;
+}
+
+.lien-a{
+  overflow: visible;
+  display:flex;
+  width:100%;
+  margin-top:15%;
+}
+
+.gauche, .droite{
+  height: 50px;
+  border-radius: 10px;
+}
+
+
+.menu-lien{
+  position: absolute;
+  top:7%;
+}
+
+.bas label{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  font-size:40px;
+}
+
+
+/**************************************************footer***************************************************/
+.footer-haut{
+  display: flex;
+  flex-flow:row;
+  justify-content: space-around;
+}
+
+.milieu-footer, .partenaire{
+  width: 50%;
+}
+}
+
+/************************************************mode pc*****************************************************************
+*******************************************************************************************************/
+@media screen and (min-width:1024px) {
+
+
+}
