@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/header,footer.css">
     <link rel="stylesheet" href="../css/equipe.css">
     <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
     <script src="https://use.fontawesome.com/40917ba2bf.js"></script>
 
@@ -15,6 +15,47 @@
   </head>
 
   <body>
+    <!-- *********************************en tête du site************************ -->
+    <header>
+      <nav class="haut">
+        <ul>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="#">Recrutement</a></li>
+          <li><a href="#">Espace presse</a></li>
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+
+      <div class="milieu"> <!--***********************************ouverture de la div"milieu"-->
+        <div class="lien-milieu" tabindex="0"> <!--***************ouverture de la div "lien-milieu-->
+          <input type="checkbox" id="lien">
+          <label for="lien" <i class="fa fa-phone" aria-hidden="true"></i></label>
+         <div class="lien-a">  <!--********************************ouverture de la div "lien-a"-->
+          <a href="#"> Demander votre <br>devis en ligne</a>
+          <a href="#"> Une question? <br>On vous rappelle.</a>
+        </div> <!--*********************************************fermeture div "lien-a"-->
+      </div>  <!--********************************************fermeture div "lien-milieu"-->
+
+
+        <div class="titre">  <!--****************************ouverture de la div "titre"-->
+          <h1><span class="couleur">3C</span>Digital</h1>
+          <p>Accélérateur de performance digitale</p>
+        </div>  <!--*************************************************fermeture div "lien-a"-->
+      </div>  <!--*************************************************fermeture div "milieu"-->
+
+      <nav class="bas" tabindex="0">
+        <input type="checkbox" id="menu">
+        <label for="menu"<i class="fa fa-bars" aria-hidden="true"></i></label>
+        <ul class="menu-lien">
+          <li><a href="../index.html">Projet réalisés</a></li>
+          <li><a href="equipe.html">Qui sommes nous?</a></li>
+          <li><a href="prestation.html">Prestation</a></li>
+        </ul>
+      </nav>
+    </header>
+<!-- *****************************************************fin en tête************************************* -->
+
     <main>
       <section class="agence">
         <h2 class="h2"><span class="couleur">Agence</span> Web de Lille</h2>
@@ -68,6 +109,40 @@
 
     </main>
 
+    <!-- **************************************************************debut footer********************************** -->
+        <footer>
+          <div class="footer-haut">
+            <section class="milieu-footer">
+              <h2> <span class="couleur">Nos labels</span>& partenariats</h2>
+              <p>3CDigital est la première agence web labellisée Origine France Garantie pour vous garantir
+                des prestations de haute qualité et un résultat à la hauteur de votre projet web.
+                Partenaire Google et Partenaire Prestashop, notre agence maîtrise chaque domaine du web avec
+                l’aide de collaborateurs experts.</p>
+              </section>
 
+            <div class="partenaire">
+             <figure>
+               <img src="../img/partenaire/partenaire.png" alt="partenaire">
+             </figure>
+             <figure>
+               <img src="../img/partenaire/partenaire2.png" alt="partenaire">
+             </figure>
+             <figure>
+               <img src="../img/partenaire/partenaire3.png" alt="partenaire">
+             </figure>
+             <figure>
+               <img src="../img/partenaire/partenaire4.jpg" alt="partenaire">
+             </figure>
+            </div>
+          </div>
+
+            <ul class="footer-bas">
+              <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="contact.html"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+
+        </footer>
   </body>
 </html>
