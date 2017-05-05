@@ -10,7 +10,12 @@ body{
   color: #ffd700;
 }
 
+<<<<<<< HEAD:css/header,footer.css
 h1{
+=======
+
+h1 {
+>>>>>>> 4722182a39d36a1423546b726bfa580a63a6ef52:header,footer.css
   color: #800080;
   text-align: center;
 }
