@@ -1,14 +1,15 @@
-body, figure, p {
+figure, p {
   margin: 0% 0%;
   padding: 0% 0%;
 }
 
-body {
-  font-family: 'Inconsolata', monospace;
-}
-
 /*--------------------------------------------------------Main------------------------------------------------*/
 
+h3 {
+  background-color: purple;
+  color: white;
+
+}
 
 .gallerie {
   display: inline-flex;
