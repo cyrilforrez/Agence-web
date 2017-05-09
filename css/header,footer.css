@@ -1,19 +1,36 @@
 /********************************************************mode tel**********************************************/
 /*****************************************************************************************************/
+
+/*****************************************************code css commun******************************************
+******************************************************************************************************/
+ul i, a i{
+  font-size:50px;
+}
+
+
+li, a{
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.haut{
+  justify-content: space-between;
+}
+
+footer{
+  justify-content: space-around;
+}
+/**************************************************************fin code css commun************************************************
+*************************************************************************************************/
+
+
 body{
   margin: 0%;
   padding:0%;
   font-family: 'Inconsolata', monospace;
 }
 
-ul i, a i{
-  font-size:50px;
-}
-
-li, a{
-  text-decoration: none;
-  list-style: none;
-}
 
 .couleur{
   color: #ffd700;
@@ -37,7 +54,6 @@ header{
 
 .haut{
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -52,10 +68,10 @@ header{
 .titre p{
   margin-bottom: 5%;
 }
+
 /***************************menu telephone***************************************/
 .bas{
   order:-1;
-  z-index:1;
 }
 
 #menu{
@@ -74,7 +90,6 @@ header{
 
 .menu-lien li{
   width:50%;
-  color: white;
   text-align: center;
   margin:8% 8% 2% 0%;
   padding:2%;
@@ -117,11 +132,19 @@ header{
 
 .lien-a a{
   text-align: center;
-  background-color:#ffd700;
-  width: 50%;
+  width:35%;
   display: block;
-  margin: 15%;
+  color: white;
+  margin:15%;
   padding: 2%;
+}
+
+.gauche{
+  background-color:#ffd700;
+}
+
+.droite{
+  background-color: #800080;
 }
 
 .lien-milieu label{
@@ -150,7 +173,6 @@ footer{
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: space-around;
 }
 
 .partenaire{
@@ -204,14 +226,14 @@ footer{
 }
 
 .haut li{
-  width:50%;
   padding:1%;
+  margin: 1%;
 }
 
 .haut{
+  width:60%;
   display: flex;
-  justify-content: space-between;
-  margin-left:10%;
+  margin-left:20%;
 }
 
 .lien-milieu label{
@@ -230,13 +252,17 @@ footer{
   width:100%;
   margin-top:15%;
   font-weight: bold;
+  font-size:15px;
+}
+
+.lien-a a{
+  margin:18%;
+  font-size: 0.7em;
 }
 
 .gauche, .droite{
   height: 50px;
-  border-radius: 10px;
 }
-
 
 .menu-lien{
   position: absolute;

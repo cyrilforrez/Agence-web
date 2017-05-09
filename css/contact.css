@@ -49,6 +49,13 @@ iframe{
 *****************************************************************************************************/
 @media screen and (min-width:768px){
 
+  .repond{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
 .contact{
   padding-top: 10%;
 }
@@ -74,11 +81,17 @@ iframe{
 **************************************************************************************************/
 @media screen and (min-width:1024px){
 
+
 .mode-pc{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left:5%;
+  margin-right: 5%;
+}
 
+.siege{
+  width: 30%;
 }
 
 }
