@@ -167,17 +167,19 @@ header{
 }
 
 /********************************************************footer*****************************************/
+footer, .partenaire{
+  display: flex;
+}
+
 footer{
   border-top: 2px double #d3d3d3;
   width: 100%;
-  display: flex;
   flex-flow: column;
   align-items: center;
 }
 
 .partenaire{
   width:80%;
-  display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
