@@ -1,0 +1,333 @@
+/********************************************************mode tel**********************************************/
+/*****************************************************************************************************/
+
+/*****************************************************code css commun******************************************
+******************************************************************************************************/
+ul i, a i{
+  font-size:50px;
+}
+
+
+li, a{
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.haut{
+  justify-content: space-between;
+}
+
+footer{
+  justify-content: space-around;
+}
+/**************************************************************fin code css commun************************************************
+*************************************************************************************************/
+
+
+body{
+  margin: 0%;
+  padding:0%;
+  font-family: 'Inconsolata', monospace;
+}
+
+
+.couleur{
+  color: #ffd700;
+}
+
+h1{
+  color: #800080;
+  text-align: center;
+  font-size:50px;
+}
+/************************************************header du site******************************************/
+header{
+  background-color:lightgrey;
+  display: flex;
+  flex-flow: column;
+}
+
+.haut ul{
+  display: none;
+}
+
+.haut{
+  display: flex;
+  align-items: flex-start;
+}
+
+.titre{
+  width: 100%;
+  text-align: center;
+}
+.titre h1, .titre p{
+  margin: 0%;
+}
+
+.titre p{
+  margin-bottom: 5%;
+}
+
+/***************************menu telephone***************************************/
+.bas{
+  order:-1;
+}
+
+#menu{
+   display: none;
+}
+
+.bas label{
+  display: block;
+  background-color: #800080;
+  padding:2%;
+  border-radius:0 0 100px 0;
+  width:60px;
+  height: 60px;
+  font-size: 30px;
+}
+
+.menu-lien li{
+  width:50%;
+  text-align: center;
+  margin:8% 8% 2% 0%;
+  padding:2%;
+}
+
+.menu-lien{
+  width:0%;
+  height:0px;
+  overflow: hidden;
+  background-color: #222222;
+}
+
+#menu:checked ~ .menu-lien{
+  width:250px;
+  height: 250px;
+  transition: 1s;
+}
+
+/************************************************menu contact*******************************************/
+
+.lien-milieu{
+  width:80%;
+  position:absolute;
+  top: 0%;
+  right: 0%;
+}
+
+#lien{
+   display: none;
+}
+
+.lien-a{
+  margin-top:30%;
+  width:0%;
+  height:0px;
+  list-style: none;
+  overflow: hidden;
+  background-color: #222222;
+}
+
+.lien-a a{
+  text-align: center;
+  width:35%;
+  display: block;
+  color: white;
+  margin:15%;
+  padding: 2%;
+}
+
+.gauche{
+  background-color:#ffd700;
+}
+
+.droite{
+  background-color: #800080;
+}
+
+.lien-milieu label{
+  display: block;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  background-color: #ffd700;
+  padding:2%;
+  border-radius:0 0 0 100px;
+  width:70px;
+  height: 70px;
+  font-size: 30px;
+}
+
+#lien:checked ~ .lien-a{
+  width:400px;
+  height:250px;
+  transition: 1s;
+}
+
+/********************************************************footer*****************************************/
+footer, .partenaire{
+  display: flex;
+}
+
+footer{
+  border-top: 2px double #d3d3d3;
+  width: 100%;
+  flex-flow: column;
+  align-items: center;
+}
+
+.partenaire{
+  width:80%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-left:3%;
+}
+
+.footer-haut figure{
+  width:20%;
+}
+
+.footer-haut img{
+  width: 100%;
+}
+
+.milieu-footer{
+  width: 90%;
+  padding: 5%;
+}
+
+.footer-bas{
+  background-color: #d3d3d3;
+  width:100%;
+  padding: 0%;
+}
+
+.footer-bas li{
+  padding-left:3%;
+  width:10%;
+  margin:5%;
+  display: inline-block;
+}
+
+/********************************************************mode tablette******************************************
+*******************************************************************************************************/
+@media screen and (min-width:768px) {
+
+/*************************************************header*************************************************/
+.bas{
+  order: 0;
+}
+
+.haut ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.haut li{
+  padding:1%;
+  margin: 1%;
+}
+
+.haut{
+  width:60%;
+  display: flex;
+  margin-left:20%;
+}
+
+.lien-milieu label{
+  display: none;
+}
+
+.lien-milieu{
+  width:100%;
+  top:-7%;
+}
+
+.lien-a{
+  overflow: visible;
+  display:flex;
+  width:100%;
+  margin-top:15%;
+  font-weight: bold;
+  font-size:15px;
+}
+
+.lien-a a{
+  margin:18%;
+  font-size: 0.7em;
+}
+
+.gauche, .droite{
+  height: 50px;
+}
+
+.menu-lien{
+  position: absolute;
+  top:7%;
+}
+
+.bas label{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  font-size:40px;
+}
+
+
+/**************************************************footer***************************************************/
+.footer-haut{
+  display: flex;
+  flex-flow:row;
+  justify-content: space-around;
+}
+
+.milieu-footer, .partenaire{
+  width: 50%;
+}
+}
+
+/************************************************mode pc*****************************************************************
+*******************************************************************************************************/
+@media screen and (min-width:1024px) {
+
+.bas label{
+  display: none;
+}
+
+.bas{
+  overflow: visible;
+  display:flex;
+}
+
+.menu-lien{
+  background-color: #fdd700;
+  width:97%;
+  height:10%;
+  display: flex;
+  margin: 0%;
+  top:35%;
+}
+
+.menu-lien li{
+  margin: auto;
+}
+
+.lien-a a{
+  font-size: 1em;
+}
+.titre{
+  margin-top: 3%;
+}
+
+.titre h1{
+  font-size: 70px;
+}
+
+.lien-a{
+  margin-top:8%;
+}
+}
