@@ -7,7 +7,14 @@ body {
   font-family: 'Inconsolata', monospace;
 }
 
+/*-------------------------------------------------SMARTPHONE-----------------------------------------------*/
+
 /*--------------------------------------------------------Main------------------------------------------------*/
+
+.gallerie, .tableau {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
 
 h2 {
   background-color: purple;
@@ -23,8 +30,6 @@ main div {
   display: inline-flex;
   margin-top: 10%;
   margin-left: 10%;
-  overflow-x: auto;
-  overflow-y: hidden;
   width: 85%;
   height: 260px;    
 }
@@ -39,10 +44,6 @@ figcaption {
 
 .gallerie img:hover {
   transform: scale(2.2);
-}
-
-.gallerie figure figcaption p {
-  text-align: left;
 }
 
 p {
@@ -62,9 +63,93 @@ table {
 }
 
 .tableau {
-  overflow-x: auto;
-  overflow-y: hidden;
   height: 630px;
   width: 90%;
   margin-bottom: 20%;
 }
+
+/*----------------------------------------------------TABLETTE----------------------------------------------*/
+
+@media (min-width: 768px){
+
+/*----------------------------------------------MAIN-------------------------------------------------------*/
+
+  main div {
+    margin: 5% auto;
+  }
+
+  .gallerie {
+    margin-left: 3%;
+    height: 380px;
+  }
+
+  .gallerie figure {
+    margin-left: 10%;
+  }
+
+  .gallerie figcaption, .gallerie p {
+    width: 100%;
+  }
+
+  .gallerie img:hover {
+    display: none;
+  }
+
+  .tableau {
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-top: 2%;
+    height: 540px;
+    width: 95%;
+  }
+}
+
+/*-----------------------------------------------------PC-----------------------------------------------*/
+
+@media (min-width: 1080px){
+
+/*---------------------------------------------------MAIN--------------------------------------------------*/
+
+main div {
+  width: 88%;
+}
+
+main div h2 {
+  width: 24%;
+}
+
+.gallerie {
+  height: 420px;
+  width: 90%;
+  margin-left: 4%;
+  margin-top: 4%;
+}
+
+.gallerie figure {
+  margin-left: 2%;
+}
+
+.gallerie img, .gallerie figure {
+  width: 100%;
+}
+
+.gallerie figcaption {
+  margin: 0%;
+  height: 310px;
+}
+
+.tableau {
+  width:100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-bottom: 5%;
+}
+
+.tableau table {
+  margin-left: 1%;
+  width: 98%;
+}
+
+
+}
+    

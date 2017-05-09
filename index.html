@@ -1,48 +1,49 @@
-<!doctype html>
-<html class="no-js" lang="fr">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <head>
+    <link rel="stylesheet" href=" css/header,footer.css">
+    <link rel="stylesheet" href="styleaccueil.css">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
-        <meta charset="utf-8">
-        <title>3C Digital</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="favicon.ico">
-        <link rel="stylesheet" href="styleaccueil.css">
-        <link rel="stylesheet" href="css/header,footer.css">
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-        <link rel="stylesheet" href="header,footer.css">
-        
-        <script src="https://use.fontawesome.com/40917ba2bf.js"></script>
+    <script src="https://use.fontawesome.com/40917ba2bf.js"></script>
 
-    </head>
-    <body>
-    
+    <title>3cDigital</title>
+  </head>
+
+  <body>
+    <!-- *********************************en tête du site************************ -->
     <header>
-        <nav class="haut">
-            <ul>
-                <li><a href="#">Nous contacter</a></li>
-                <li><a href="#">Recrutement</a></li>
-                <li><a href="#">Espace presse</a></li>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            </ul>
-        </nav>
+      <nav class="haut">
+        <ul>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="#">Recrutement</a></li>
+          <li><a href="#">Espace presse</a></li>
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
 
-      <div class="milieu">
-        <div class="lien-milieu" tabindex="0">
+      <div class="milieu"> <!--***********************************ouverture de la div"milieu"-->
+        <div class="lien-milieu" tabindex="0"> <!--***************ouverture de la div "lien-milieu-->
           <input type="checkbox" id="lien">
-          <label for="lien"<i class="fa fa-phone" aria-hidden="true"></i></label>
-         <div class="lien-lien">
-          <a href="#"> Demander votre <br>devis en ligne</a>
-          <a href="#"> Une question? <br>On vous rappelle.</a>
-         </div>
-        </div>
+          <label for="lien"><i class="fa fa-phone" aria-hidden="true"></i></label>
+         <div class="lien-a">  <!--********************************ouverture de la div "lien-a"-->
+          <a class="gauche" href="#"> Demander votre <br>devis en ligne</a>
+          <a class="droite" href="#"> Une question? <br>On vous rappelle.</a>
+        </div> <!--*********************************************fermeture div "lien-a"-->
+      </div>  <!--********************************************fermeture div "lien-milieu"-->
 
-        <div class="titre">
+
+        <div class="titre">  <!--****************************ouverture de la div "titre"-->
           <h1><span class="couleur">3C</span>Digital</h1>
           <p>Accélérateur de performance digitale</p>
-        </div>
-      </div>
+        </div>  <!--*************************************************fermeture div "lien-a"-->
+      </div>  <!--*************************************************fermeture div "milieu"-->
+
 
         <nav class="bas" tabindex="0">
             <input type="checkbox" id="menu">
@@ -53,21 +54,37 @@
                         <li><a href="html/prestation">Prestation</a></li>
                     </ul>
         </nav>
+
+      <nav class="bas" tabindex="0">
+        <input type="checkbox" id="menu">
+        <label for="menu"><i class="fa fa-bars" aria-hidden="true"></i></label>
+        <ul class="menu-lien">
+          <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+          <li><a href="html/equipe.html">Qui sommes nous?</a></li>
+          <li><a href="html/prestation.html">Prestation</a></li>
+        </ul>
+      </nav>
+
     </header>
+
+<!--######################################################Fin du header#########################################-->
+
+<!--####################################Début du main##########################################################-->
 
         <main>
                 <div>
-                    <h2>Portfolio 3C Digital</h2>
+                    <h2>Portfolio 3CDigital</h2>
                     <p>Nos créations de site internet, adaptables sur tout support, vous procurent visibilité et présence sur le web. Nos webdesigners réalisent des performances graphiques et fonctionnelles pour votre support en ligne. Découvrez notre portfolio.</p>
                 </div>
+
+<!--##############################Début de la 1er gallerie##########################################################-->
 
                 <div class="gallerie">
                     <figure>
                         <figcaption>
                             <img src="img/smartphone/alcatine.jpg"
                             srcset="img/tablette/alcatine.jpg 768w"
-                            srcset="img/pc/alcatine.jpg 1200w" alt="alcatine">
-
+                            srcset="img/pc/alcatine.jpg 1080w" alt="alcatine">
                             <p>Peinture ALCATINE</p>
                             <p>Sainte-Geneviève-Des-Bois</p>
                             <p>www.alcatine-91.com</p>
@@ -78,7 +95,7 @@
                         <figcaption>
                             <img src="img/smartphone/autoecole.jpg"
                             srcset="img/tablette/autoecole.jpg 768w"
-                            srcset="img/pc/autoecole.jpg 1200w" alt="autoecole">
+                            srcset="img/pc/autoecole.jpg 1080w" alt="autoecole">
                             <p>Auto-école des Princes</p>
                             <p>Boulogne-Billancourt</p>
                             <p>www.autoecole-des-princes.com</p>
@@ -89,7 +106,7 @@
                         <figcaption>
                             <img src="img/smartphone/cleaningbio.jpg"
                             srcset="img/tablette/cleaningbio.jpg 768w"
-                            srcset="img/pc/cleaningbio/jpg 1200w" alt="cleaningbio">
+                            srcset="img/pc/cleaningbio/jpg 1800w" alt="cleaningbio">
                             <p>Nettoyage Cleaning Bio</p>
                             <p>Lille</p>
                             <p>www.cleaningbio.eu</p>
@@ -100,7 +117,7 @@
                         <figcaption>
                             <img src="img/smartphone /fleuriste.jpg"
                             srcset="img/tablette/fleuriste.jpg 768w"
-                            srcset="img/pc/fleuriste 1200w" alt="fleuriste">
+                            srcset="img/pc/fleuriste 1080w" alt="fleuriste">
                             <p>Fleuriste GUILLEMET</p>
                             <p>Le Molay Littry (14)</p>
                             <p>www.eric-guillemet-fleuriste.com</p>
@@ -111,7 +128,7 @@
                         <figcaption>
                             <img src="img/smartphone/pronal.jpg"
                             srcset="img/tablette/pronal.jpg 768w"
-                            srcset="img/pc/pronal.jpg 1200w" alt="pronal">
+                            srcset="img/pc/pronal.jpg 1080w" alt="pronal">
                             <p>Pronal Ingéniérie</p>
                             <p>Leers (59)</p>
                             <p>www.pronal.com</p>
@@ -119,12 +136,16 @@
                     </figure>
                 </div>
 
+<!--###################################Fin de la 1er gallerie####################################################-->
+
+<!--###################################Début de la 2eme gallerie#################################################-->
+
                 <div class="gallerie">
                     <figure>
                         <figcaption>
                             <img src="img/smartphone/artisansdelalys.jpg"
                             srcset="img/tablette/artisansdelalys.jpg 768w"
-                            srcset="img/pc/artisansdelalys.jpg 1200w" alt="artisansdelalys">
+                            srcset="img/pc/artisansdelalys.jpg 1080w" alt="artisansdelalys">
                             <p>Artisans de la Lys</p>
                             <p>Lille</p>
                             <p>www.artisans-de-la-lys.com</p>
@@ -135,7 +156,7 @@
                         <figcaption>
                             <img src="img/smartphone/chezvagabond.jpg"
                             srcset="img/tablette/chezvagabond.jpg 768w"
-                            srcset="img/pc/chezvagabond.jpg 1200w" alt="chezvagabond">
+                            srcset="img/pc/chezvagabond.jpg 1080w" alt="chezvagabond">
                             <p>Pension Canine</p>
                             <p>Frasnoy (59)</p>
                             <p>www.pension-chez-vagabond.com</p>
@@ -146,7 +167,7 @@
                         <figcaption>
                             <img src="img/smartphone/dadecoiffure.jpg"
                             srcset="img/tablette/dadecoiffure.jpg 768w"
-                            srcset="img/pc/dadecoiffure.jpg 1200w" alt="dadecoiffure">
+                            srcset="img/pc/dadecoiffure.jpg 1080w" alt="dadecoiffure">
                             <p>Salon de coiffure DADE</p>
                             <p>Calais</p>
                             <p>www.latelier-dade-coiffure.com</p>
@@ -157,7 +178,7 @@
                         <figcaption>
                             <img src="img/smartphone/marinatraiteur.jpg"
                             srcset="img/tablette/marinatraiteur.jpg 768w"
-                            srcset="img/pc/marinatraiteur.jpg 1200w" alt="marinatraiteur">
+                            srcset="img/pc/marinatraiteur.jpg 1080w" alt="marinatraiteur">
                             <p>Traiteur Marina</p>
                             <p>Maurepas (78)</p>
                             <p>www.marina-traiteur78.com</p>
@@ -168,13 +189,17 @@
                         <figcaption>
                             <img src="img/smartphone/tcelectricite.jpg"
                             srcset="img/tablette/tcelectricite.jpg 768w"
-                            srcset="img/pc/tcelectricite.jpg 1200w" alt="tcelectricite">
+                            srcset="img/pc/tcelectricite.jpg 1080w" alt="tcelectricite">
                             <p>TC Electricité</p>
                             <p>Bruxelles</p>
                             <p>www.tc-electricite.be</p>
                         </figcaption>
                     </figure>
                 </div>
+
+<!--###########################################Fin de la 2eme gallerie #####################################-->
+
+<!--############################################Début du tableau######################################################-->
 
                 <div class="tableau">
                     <table>
@@ -266,7 +291,13 @@
                     </table>
                 </div>
 
-            </main>    
+<!--############################################Fin du tableau####################################################-->
+
+            </main> 
+
+<!-- ###########################################Fin du main#######################################################-->
+
+<!--#############################################Début du footer##################################################-->   
 
     <footer>
       <div class="footer-haut">
@@ -303,6 +334,8 @@
         </ul>
 
     </footer>
+
+<!--################################################Fin du footer################################################-->
 
   </body>
 
