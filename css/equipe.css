@@ -16,6 +16,14 @@ main {
   text-align: center;
 }
 
+
+.couleur{
+  color: #ffd700;
+}
+
+.agence{
+  width:90%;
+  
 figcaption span {
   text-decoration: underline;
   font-size: 20px;
@@ -29,6 +37,7 @@ figure img {
 
 figure {
   margin: 5px;
+  test
   text-align: center;
 }
 

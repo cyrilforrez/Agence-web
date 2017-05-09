@@ -30,10 +30,10 @@
       <div class="milieu"> <!--***********************************ouverture de la div"milieu"-->
         <div class="lien-milieu" tabindex="0"> <!--***************ouverture de la div "lien-milieu-->
           <input type="checkbox" id="lien">
-          <label for="lien" <i class="fa fa-phone" aria-hidden="true"></i></label>
+          <label for="lien"><i class="fa fa-phone" aria-hidden="true"></i></label>
          <div class="lien-a">  <!--********************************ouverture de la div "lien-a"-->
-          <a href="#"> Demander votre <br>devis en ligne</a>
-          <a href="#"> Une question? <br>On vous rappelle.</a>
+          <a class="gauche" href="#"> Demander votre <br>devis en ligne</a>
+          <a class="droite" href="#"> Une question? <br>On vous rappelle.</a>
         </div> <!--*********************************************fermeture div "lien-a"-->
       </div>  <!--********************************************fermeture div "lien-milieu"-->
 
@@ -46,9 +46,9 @@
 
       <nav class="bas" tabindex="0">
         <input type="checkbox" id="menu">
-        <label for="menu"<i class="fa fa-bars" aria-hidden="true"></i></label>
+        <label for="menu"><i class="fa fa-bars" aria-hidden="true"></i></label>
         <ul class="menu-lien">
-          <li><a href="../index.html">Projet réalisés</a></li>
+          <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
           <li><a href="equipe.html">Qui sommes nous?</a></li>
           <li><a href="prestation.html">Prestation</a></li>
         </ul>
@@ -60,7 +60,8 @@
       <section class="repond">
         <h2 class="h2"><span class="couleur">3CDigital</span> répond à vos questions!</h2>
         <p>Besoin d'un conseil? D'une idée neuve? D'en savoir plus sur nos services? <strong>Contactez-nous!</strong></p>
-
+      </section>
+        <div class="mode-pc">
          <form class="formulaire" method="post" action="traitement.php">
            <div class="coordonees">
              <h3 class="h3">vos coordonnées</h3>
@@ -87,7 +88,7 @@
             <br><input type="text" name="Complément-adresse" id="Complément-adresse" placeholder="Ex : appt 456" size="30" maxlength="10" /></p>
            <p><label for="Pays">Pays :</label>
             <br><input type="text" name="Pays" id="Pays" placeholder="Ex : France" size="30" maxlength="10" /></p>
-
+          </div>
           <div class="question">
            <h3 class="h3">Votre message</h3>
            <p><label for="question"></label>
@@ -106,41 +107,42 @@
          <h3 class="h3">Horaires</h3>
          <p>Du lundi au vendredi <br>De 9h à 17h30</p>
        </div>
-      </section>
+     </div>
+    </main>
       <!-- **************************************************************debut footer********************************** -->
-          <footer>
-            <div class="footer-haut">
-              <section class="milieu-footer">
-                <h2> <span class="couleur">Nos labels</span>& partenariats</h2>
-                <p>3CDigital est la première agence web labellisée Origine France Garantie pour vous garantir
-                  des prestations de haute qualité et un résultat à la hauteur de votre projet web.
-                  Partenaire Google et Partenaire Prestashop, notre agence maîtrise chaque domaine du web avec
-                  l’aide de collaborateurs experts.</p>
-                </section>
+      <footer>
+        <div class="footer-haut">
+          <section class="milieu-footer">
+            <h2 class="h2"> <span class="couleur">Nos labels</span>& partenariats</h2>
+            <p>3CDigital est la première agence web labellisée Origine France Garantie pour vous garantir
+              des prestations de haute qualité et un résultat à la hauteur de votre projet web.
+              Partenaire Google et Partenaire Prestashop, notre agence maîtrise chaque domaine du web avec
+              l’aide de collaborateurs experts.</p>
+            </section>
 
-              <div class="partenaire">
-               <figure>
-                 <img src="../img/partenaire/partenaire.png" alt="partenaire">
-               </figure>
-               <figure>
-                 <img src="../img/partenaire/partenaire2.png" alt="partenaire">
-               </figure>
-               <figure>
-                 <img src="../img/partenaire/partenaire3.png" alt="partenaire">
-               </figure>
-               <figure>
-                 <img src="../img/partenaire/partenaire4.jpg" alt="partenaire">
-               </figure>
-              </div>
-            </div>
+          <div class="partenaire">
+           <figure>
+             <img src="../img/partenaire/partenaire.png" alt="partenaire">
+           </figure>
+           <figure>
+             <img src="../img/partenaire/partenaire2.png" alt="partenaire">
+           </figure>
+           <figure>
+             <img src="../img/partenaire/partenaire3.png" alt="partenaire">
+           </figure>
+           <figure>
+             <img src="../img/partenaire/partenaire4.jpg" alt="partenaire">
+           </figure>
+          </div>
+        </div>
 
-              <ul class="footer-bas">
-                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="contact.html"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              </ul>
+          <ul class="footer-bas">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="contact.html"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
 
-          </footer>
+      </footer>
     </body>
-</html>
+  </html>
