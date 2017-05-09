@@ -8,6 +8,7 @@ body{
 
 main {
   margin: 5px;
+  margin-top: 80px;
 }
 
 .h2 {
@@ -68,6 +69,7 @@ figure {
 
   figure img {
     margin-bottom: 20px;
+    margin-left: 70px;
   }
 
 .agence  {
