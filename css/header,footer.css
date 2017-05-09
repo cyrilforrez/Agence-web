@@ -243,9 +243,8 @@ footer{
 }
 
 .lien-milieu{
-  width:136%;
+  width:100%;
   top:-7%;
-  right:-18%;
 }
 
 .lien-a{
@@ -306,7 +305,7 @@ footer{
 
 .menu-lien{
   background-color: #fdd700;
-  width: 100%;
+  width:97%;
   height:10%;
   display: flex;
   margin: 0%;
@@ -317,6 +316,9 @@ footer{
   margin: auto;
 }
 
+.lien-a a{
+  font-size: 1em;
+}
 .titre{
   margin-top: 3%;
 }
